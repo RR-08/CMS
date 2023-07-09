@@ -22,9 +22,17 @@ Partial Class Inventory
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Inventory"
+        SuspendLayout()
+        ' 
+        ' Inventory
+        ' 
+        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1050, 695)
+        FormBorderStyle = FormBorderStyle.None
+        Name = "Inventory"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Inventory"
+        ResumeLayout(False)
     End Sub
 End Class

@@ -29,6 +29,7 @@ Partial Class Login
         TextBox2 = New TextBox()
         Button1 = New Button()
         Button2 = New Button()
+        Label4 = New Label()
         SuspendLayout()
         ' 
         ' Label1
@@ -93,8 +94,19 @@ Partial Class Login
         Button2.Name = "Button2"
         Button2.Size = New Size(112, 34)
         Button2.TabIndex = 8
-        Button2.Text = "Button2"
+        Button2.Text = "Reset"
         Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.White
+        Label4.ForeColor = Color.IndianRed
+        Label4.Location = New Point(747, 39)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(23, 25)
+        Label4.TabIndex = 9
+        Label4.Text = "X"
         ' 
         ' Login
         ' 
@@ -102,6 +114,7 @@ Partial Class Login
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(800, 450)
+        Controls.Add(Label4)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(TextBox2)
@@ -124,4 +137,5 @@ Partial Class Login
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label4 As Label
 End Class
