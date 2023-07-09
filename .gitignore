@@ -2,3 +2,4 @@ bin
 'My project'
 'My project'/*
 bin/*
+obj
