@@ -24,9 +24,9 @@ Partial Class Login
     Private Sub InitializeComponent()
         Label1 = New Label()
         Label2 = New Label()
-        TextBox1 = New TextBox()
+        userNameTB = New TextBox()
         Label3 = New Label()
-        TextBox2 = New TextBox()
+        pwdTb = New TextBox()
         Button1 = New Button()
         Button2 = New Button()
         Label4 = New Label()
@@ -54,12 +54,12 @@ Partial Class Login
         Label2.TabIndex = 3
         Label2.Text = "Login"
         ' 
-        ' TextBox1
+        ' userNameTB
         ' 
-        TextBox1.Location = New Point(458, 115)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(150, 31)
-        TextBox1.TabIndex = 4
+        userNameTB.Location = New Point(458, 115)
+        userNameTB.Name = "userNameTB"
+        userNameTB.Size = New Size(150, 31)
+        userNameTB.TabIndex = 4
         ' 
         ' Label3
         ' 
@@ -72,12 +72,13 @@ Partial Class Login
         Label3.TabIndex = 5
         Label3.Text = "Password"
         ' 
-        ' TextBox2
+        ' pwdTb
         ' 
-        TextBox2.Location = New Point(458, 189)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(150, 31)
-        TextBox2.TabIndex = 6
+        pwdTb.Location = New Point(458, 189)
+        pwdTb.Name = "pwdTb"
+        pwdTb.PasswordChar = "*"c
+        pwdTb.Size = New Size(150, 31)
+        pwdTb.TabIndex = 6
         ' 
         ' Button1
         ' 
@@ -117,9 +118,9 @@ Partial Class Login
         Controls.Add(Label4)
         Controls.Add(Button2)
         Controls.Add(Button1)
-        Controls.Add(TextBox2)
+        Controls.Add(pwdTb)
         Controls.Add(Label3)
-        Controls.Add(TextBox1)
+        Controls.Add(userNameTB)
         Controls.Add(Label2)
         Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.None
@@ -132,9 +133,9 @@ Partial Class Login
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents userNameTB As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents pwdTb As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label4 As Label

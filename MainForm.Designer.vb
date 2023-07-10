@@ -24,20 +24,20 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(MainForm))
         Panel1 = New Panel()
-        PictureBox1 = New PictureBox()
-        PictureBox2 = New PictureBox()
-        PictureBox3 = New PictureBox()
-        Label1 = New Label()
-        Label2 = New Label()
+        Label7 = New Label()
         Label3 = New Label()
+        Label2 = New Label()
+        Label1 = New Label()
+        PictureBox3 = New PictureBox()
+        PictureBox2 = New PictureBox()
+        PictureBox1 = New PictureBox()
         Label4 = New Label()
         Label5 = New Label()
         Label6 = New Label()
-        Label7 = New Label()
         Panel1.SuspendLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -55,25 +55,43 @@ Partial Class MainForm
         Panel1.Size = New Size(800, 306)
         Panel1.TabIndex = 0
         ' 
-        ' PictureBox1
+        ' Label7
         ' 
-        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(84, 106)
-        PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(150, 75)
-        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox1.TabIndex = 0
-        PictureBox1.TabStop = False
+        Label7.AutoSize = True
+        Label7.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.ForeColor = Color.IndianRed
+        Label7.Location = New Point(139, 30)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(521, 48)
+        Label7.TabIndex = 9
+        Label7.Text = "Cylinder Management System"
         ' 
-        ' PictureBox2
+        ' Label3
         ' 
-        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(310, 106)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(150, 75)
-        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox2.TabIndex = 1
-        PictureBox2.TabStop = False
+        Label3.AutoSize = True
+        Label3.Location = New Point(583, 205)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(49, 25)
+        Label3.TabIndex = 5
+        Label3.Text = "Slips"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(334, 205)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(65, 25)
+        Label2.TabIndex = 4
+        Label2.Text = "Details"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(114, 205)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(87, 25)
+        Label1.TabIndex = 3
+        Label1.Text = "Inventory"
         ' 
         ' PictureBox3
         ' 
@@ -85,32 +103,25 @@ Partial Class MainForm
         PictureBox3.TabIndex = 2
         PictureBox3.TabStop = False
         ' 
-        ' Label1
+        ' PictureBox2
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(114, 205)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(87, 25)
-        Label1.TabIndex = 3
-        Label1.Text = "Inventory"
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(310, 106)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(150, 75)
+        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox2.TabIndex = 1
+        PictureBox2.TabStop = False
         ' 
-        ' Label2
+        ' PictureBox1
         ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(334, 205)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(65, 25)
-        Label2.TabIndex = 4
-        Label2.Text = "Details"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(583, 205)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(49, 25)
-        Label3.TabIndex = 5
-        Label3.Text = "Slips"
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(84, 106)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(150, 75)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 0
+        PictureBox1.TabStop = False
         ' 
         ' Label4
         ' 
@@ -139,22 +150,11 @@ Partial Class MainForm
         Label6.TabIndex = 8
         Label6.Text = "Home"
         ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.ForeColor = Color.IndianRed
-        Label7.Location = New Point(139, 30)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(521, 48)
-        Label7.TabIndex = 9
-        Label7.Text = "Cylinder Management System"
-        ' 
         ' MainForm
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.IndianRed
+        BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
         ClientSize = New Size(800, 450)
         Controls.Add(Label6)
         Controls.Add(Label5)
@@ -166,9 +166,9 @@ Partial Class MainForm
         Text = "MainForm"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
