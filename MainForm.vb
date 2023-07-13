@@ -14,13 +14,13 @@
         tank.Show()
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Dim Det = New Details
         Det.Show()
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+    Private Sub Label2_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Dim Det = New Details
         Det.Show()
@@ -36,5 +36,10 @@
         Me.Hide()
         Dim slip = New Prints
         slip.Show()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        Application.Exit()
+
     End Sub
 End Class
