@@ -49,7 +49,7 @@ Partial Class MainForm
         Panel1.Controls.Add(PictureBox1)
         Panel1.Location = New Point(0, 12)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1113, 698)
+        Panel1.Size = New Size(1110, 744)
         Panel1.TabIndex = 0
         ' 
         ' Label4
@@ -69,7 +69,7 @@ Partial Class MainForm
         Label2.AutoSize = True
         Label2.Font = New Font("Arial Narrow", 20F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.ForeColor = Color.FromArgb(CByte(236), CByte(108), CByte(33))
-        Label2.Location = New Point(324, 48)
+        Label2.Location = New Point(279, 48)
         Label2.Name = "Label2"
         Label2.Size = New Size(484, 46)
         Label2.TabIndex = 12
